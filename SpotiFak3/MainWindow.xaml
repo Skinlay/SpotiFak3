@@ -1,0 +1,29 @@
+﻿<Window x:Class="SpotiFak3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpotiFak3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock TextWrapping="Wrap" Text="SpotiFak"  Margin="0,30,0,10" Width="200" FontSize="22" TextAlignment="Center" />
+
+            <!-- Login -->
+            <TextBlock TextWrapping="Wrap" Text="E-mail"  Margin="0,0,0,0" Width="200" />
+            <TextBox Name="txtEmail" Margin="0,0,0,10" Width="200"/>
+
+            <!--Password-->
+            <TextBlock TextWrapping="Wrap" Text="Password"  Margin="0,0,0,0" Width="200" />
+            <TextBox Name="txtPassword" Margin="0,0,0,0" Width="200"/>
+        </StackPanel>
+
+        <!-- Butten -->
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btnSignUp" Content="Sign Up" Width="95" Height="20" Margin="0,0,10,0" Click="btnSignUp_Click"/>
+            <Button x:Name="btnLogin" Content="Login" Width="95" Height="20" Click="btnLogin_Click"  />
+        </StackPanel>
+    </Grid>
+</Window>
